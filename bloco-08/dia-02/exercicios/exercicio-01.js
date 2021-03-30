@@ -66,8 +66,9 @@ const books = [
 
 function authorBornIn1947() {
   const result = books.find(
-    anoDeNascimento => anoDeNascimento.author.birthYear === 1947);
-  const autor = result.author.name;
+    (anoDeNascimento) => anoDeNascimento.author.birthYear === 1947);
+
+    const autor = result.author.name;
 
   return autor;
 }
